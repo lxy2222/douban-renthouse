@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <title>豆瓣租房</title>
+</head>
+<body>
+  <div id="app">
+    <el-container>
+      <el-input v-model="input" placeholder="请输入内容"></el-input>
+    </el-container>
+    
+  </div>
+</body>
+ <!-- import Vue before Element -->
+ <script src="https://unpkg.com/vue/dist/vue.js"></script>
+ <!-- import JavaScript -->
+ <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+ <script>
+   new Vue({
+     el: '#app',
+     data: function() {
+       return { input: '' }
+     }
+   })
+ </script>
+</html>
